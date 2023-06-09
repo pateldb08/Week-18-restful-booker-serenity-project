@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="com.restful.booker.crudtest.CRUDTest" skipped="0" tests="1" time="3.76" timestamp="2023-06-06T01:35:13.674+01:00[Europe/London]"><testcase classname="com.restful.booker.crudtest.CRUDTest" name="This will generate a new booking and also verify new generated booking"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.restful.booker.crudtest.CRUDTest.test02(CRUDTest.java:54)&#13;
+</system-err></testcase></testsuite>

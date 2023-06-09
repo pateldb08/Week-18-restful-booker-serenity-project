@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="4" name="com.restful.booker.crudtest.CRUDTest" skipped="0" tests="6" time="6.22" timestamp="2023-06-06T01:31:09.484+01:00[Europe/London]"><testcase classname="com.restful.booker.crudtest.CRUDTest" name="Getting Single ID"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)&#13;
+com.restful.booker.steps.GetBookingSteps.getBookingBySingleId(GetBookingSteps.java:23)&#13;
+com.restful.booker.crudtest.CRUDTest.test004(CRUDTest.java:76)&#13;
+</system-err></testcase><testcase classname="com.restful.booker.crudtest.CRUDTest" name="Creating new token"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.restful.booker.crudtest.CRUDTest.test01(CRUDTest.java:44)&#13;
+</system-err></testcase><testcase classname="com.restful.booker.crudtest.CRUDTest" name="This will generate a new booking and also verify new generated booking"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.restful.booker.crudtest.CRUDTest.test02(CRUDTest.java:53)&#13;
+</system-err></testcase><testcase classname="com.restful.booker.crudtest.CRUDTest" name="Getting all booking Id"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+com.restful.booker.crudtest.CRUDTest.test03(CRUDTest.java:70)&#13;
+</system-err></testcase><testcase classname="com.restful.booker.crudtest.CRUDTest" name="Update booking"><error message="Path parameters were not correctly defined. Redundant path parameters are: bookingId=0. Undefined path parameters are: bookinId." type="java.lang.IllegalArgumentException">Path parameters were not correctly defined. Redundant path parameters are: bookingId=0. Undefined path parameters are: bookinId.</error><system-err>Path parameters were not correctly defined. Redundant path parameters are: bookingId=0. Undefined path parameters are: bookinId.&#13;
+io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1336)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)&#13;
+io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)&#13;
+io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1223)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)&#13;
+io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)&#13;
+io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1722)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)&#13;
+io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)&#13;
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1728)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)&#13;
+io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)&#13;
+io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:168)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:227)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java:48)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java:27)&#13;
+com.restful.booker.steps.UpdateBookingSteps.getBookingById(UpdateBookingSteps.java:41)&#13;
+com.restful.booker.crudtest.CRUDTest.test05(CRUDTest.java:92)&#13;
+</system-err></testcase><testcase classname="com.restful.booker.crudtest.CRUDTest" name="Deleting the booking by ID and verifying deletion."><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;403&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;403&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;403&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.restful.booker.crudtest.CRUDTest.test06(CRUDTest.java:104)&#13;
+</system-err></testcase></testsuite>
